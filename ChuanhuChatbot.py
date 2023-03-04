@@ -183,4 +183,4 @@ with gr.Blocks() as demo:
     saveBtn.click(save_chat_history, [saveFileName, systemPrompt, context], None, show_progress=True)
 
 
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=9999)
